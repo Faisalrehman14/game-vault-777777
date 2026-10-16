@@ -109,6 +109,29 @@ body {
 
 
 
+
+.download {
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 100vh;
+    position: relative;
+}
+
+.box1 {
+    position: relative;
+    max-height: 1400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: center;
+}
+
+.box-img {
+    display: block;
+    width: 100%;
+}
+
 /* Footer Redesign - Floating Center */
 .footer {
     position: fixed;
