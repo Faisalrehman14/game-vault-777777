@@ -160,9 +160,13 @@ body {
     width: auto;
 }
 
-.logo-img {
-    height: 100%;
-    width: auto;
+.logo-text {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    white-space: nowrap;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-family: 'Arial Black', sans-serif;
 }
 
 .download-container {
