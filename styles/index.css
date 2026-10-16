@@ -111,9 +111,12 @@ body {
 /* Footer Redesign - Floating Center */
 .footer {
     position: fixed;
-    bottom: 25px; /* Bottom se thoda upar floating */
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* Horizontal centering for fixed elements */
     width: 92%;
-    max-width: 500px; /* Compact width for center look */
+    max-width: 500px;
     height: 75px;
     display: flex;
     align-items: center;
@@ -121,11 +124,9 @@ body {
     padding: 0 20px;
     background: linear-gradient(to bottom, #2b7af1 0%, #0b5ed7 100%);
     border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 18px; /* Rounded corners */
+    border-radius: 18px;
     z-index: 1000;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6); /* Shadow for floating effect */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
 .logo {
