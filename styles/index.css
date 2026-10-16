@@ -1,0 +1,439 @@
+/*初始化-----------------------------------------------------*/
+html {
+    font-size: 100px;
+}
+
+body,
+ul,
+dl,
+dd,
+ol,
+p,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: 0;
+    font: 0.2rem/1.5 'Microsoft YaHei', 'tahoma', 'arial', 'Hiragino Sans GB', '宋体', 'sans-serif';
+}
+
+img {
+    border: none;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    -webkit-appearance: none;
+}
+
+a {
+    color: #737373;
+    cursor: pointer;
+    outline: 0;
+    text-decoration: none;
+    display: block;
+}
+
+a:hover,
+a:active {
+    color: #fcd100;
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    font: 0.14rem/1.5 'Microsoft YaHei', 'tahoma', 'arial', 'Hiragino Sans GB', '宋体', 'sans-serif';
+    color: #fff;
+}
+
+.clearfix::before {
+    content: " ";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix::after {
+    content: " ";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+.fl {
+    float: left !important;
+}
+
+.fr {
+    float: right !important;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* Firefox */
+    -webkit-box-sizing: border-box;
+    /* Safari */
+}
+
+/*初始化-----------------------------------------------------*/
+.header {
+    width: 100%;
+    height: auto;
+}
+.header .webButton, .header .downloadButton {
+    position: absolute;
+    top: 0;
+    width: 30%;
+    height: 100%;
+}
+.header .webButton{
+    left: 35%;
+}
+.header .downloadButton
+{
+    right: 5%;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 0 0 0;
+    text-align: center;
+    color: #fff;
+    font-size: 0.2rem;
+}
+
+/*分辨率宽度 1000px 以下 相差100px*/
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 95px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 90px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 85px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 75px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 65px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    html {
+        font-size: 60px;
+    }
+}
+
+button:focus {
+    outline: 0;
+}
+
+.box {
+    overflow: auto;
+    height: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.middle-text {
+    font-size: 24px;
+    color: #222222;
+}
+
+.middle-money {
+    color: red;
+}
+
+.unit {
+    font-size: 30px;
+}
+
+.money {
+    font-size: 72px;
+}
+
+.btn {
+    color: #fff;
+    background-color: #F25C27;
+    width: 100%;
+    border: 1px solid #F25C27;
+    font-size: 24px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.following {
+    position: fixed;
+    height: 65px;
+    background-color: #86aefa;
+    display: flex;
+    bottom: 0px;
+    left: 0px;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5px;
+}
+
+.logo {
+    position: absolute;
+    height: 80%;
+    left: 8%;
+    width: 25%;
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+}
+
+.download {
+    max-width: 640px;
+    margin: 0 auto;
+    /* width: 110px;
+    height: 40px; */
+}
+
+.download-btn {
+    width: 100%;
+    height: 100%;
+}
+
+.following-text {
+    font-size: 16px;
+    color: #fff;
+}
+
+.div-btn {
+    width: 70%;
+    height: 60px;
+}
+
+.dis {
+    display: none;
+}
+
+.room {
+    color: #666;
+    /* margin-bottom: 15px; */
+    padding: 0 10px;
+    height: 30px;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.room-no {
+    border-radius: 2px;
+    height: 30px;
+    border: 1px solid #999;
+    margin: 0 5px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #6a6a6a;
+}
+
+.room-item {
+    display: flex;
+}
+
+/*//////////////////////////////////////////////////////////////////////////*/
+/* .download {
+  height: 169%;
+} */
+
+.box1 {
+    position: relative;
+    /* background-image: url("../images/mages2.jpg"); */
+    /* // padding-top: 100%; */
+    /*height: 100%;*/
+    max-height: 1400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: center;
+}
+
+.btn1 {
+    position: absolute;
+    top: 10.5rem;
+    width: 8rem;
+    height: 3rem;
+    left: 50%;
+    margin-left: -4rem;
+}
+
+.btn4 {
+    position: absolute;
+    top: 19.5rem;
+    width: 3rem;
+    height: 3rem;
+    left: 50%;
+    margin-left: -1.5rem;
+}
+
+.btn1-img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn2 {
+    position: absolute;
+    top: 41.5rem;
+    width: 8rem;
+    height: 3rem;
+    left: 50%;
+    margin-left: -4rem;
+}
+
+.btn2-img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn4-img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    max-width: 640px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.download1{
+    width:100%;
+    height: 100%;
+}
+
+.title {
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn3 {
+    width: 110px;
+    height: 40px;
+}
+
+.btn3-img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo1 {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-img1 {
+    width: 100%;
+    height: 100%;
+}
+
+.backTop {
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    bottom: 65px;
+    /* // background-color: #fff; */
+}
+
+.box-img {
+    display: block;
+    width: 100%;
+}
+
+.info {
+    margin-bottom: 65px;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dis1 {
+    height: 0px;
+    display: none;
+}
