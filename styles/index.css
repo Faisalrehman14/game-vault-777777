@@ -109,15 +109,6 @@ body {
     width: 100%;
     height: auto;
 }
-.header .webButton, .header .downloadButton {
-    position: absolute;
-    top: 0;
-    width: 30%;
-    height: 100%;
-}
-.header .webButton{
-    left: 35%;
-}
 .header .downloadButton
 {
     right: 5%;
