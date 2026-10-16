@@ -105,341 +105,66 @@ body {
 }
 
 /*初始化-----------------------------------------------------*/
-.header {
-    width: 100%;
-    height: auto;
-    position: relative;
-}
-.webButtonMask {
-    position: absolute;
-    top: 0;
-    left: 32%;
-    width: 35%;
-    height: 100%;
-    background: linear-gradient(to bottom, #2b7af1, #0b5ed7);
-    z-index: 1;
-}
-.header .downloadButton
-{
-    position: absolute;
-    top: 0;
-    width: 30%;
-    height: 100%;
-    right: 5%;
-    z-index: 2;
-}
 
+
+
+/* Footer Redesign */
 .footer {
-    width: 100%;
-    height: auto;
-    padding: 0 0 0;
-    text-align: center;
-    color: #fff;
-    font-size: 0.2rem;
-}
-
-/*分辨率宽度 1000px 以下 相差100px*/
-@media screen and (max-width: 1000px) {
-    html {
-        font-size: 95px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    html {
-        font-size: 90px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    html {
-        font-size: 85px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    html {
-        font-size: 80px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    html {
-        font-size: 75px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    html {
-        font-size: 70px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    html {
-        font-size: 65px;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    html {
-        font-size: 60px;
-    }
-}
-
-button:focus {
-    outline: 0;
-}
-
-.box {
-    overflow: auto;
-    height: 100%;
-}
-
-.image {
-    width: 100%;
-    height: 300px;
-}
-
-.img {
-    width: 100%;
-    height: 100%;
-}
-
-.middle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.middle-text {
-    font-size: 24px;
-    color: #222222;
-}
-
-.middle-money {
-    color: red;
-}
-
-.unit {
-    font-size: 30px;
-}
-
-.money {
-    font-size: 72px;
-}
-
-.btn {
-    color: #fff;
-    background-color: #F25C27;
-    width: 100%;
-    border: 1px solid #F25C27;
-    font-size: 24px;
-    height: 60px;
-    border-radius: 30px;
-}
-
-.following {
     position: fixed;
-    height: 65px;
-    background-color: #86aefa;
-    display: flex;
     bottom: 0px;
-    left: 0px;
-    align-items: center;
-    justify-content: space-around;
     width: 100%;
-    padding: 5px;
+    max-width: 640px;
+    height: 85px; /* Thoda zyada height original jaisa */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: linear-gradient(to bottom, #2b7af1 0%, #0b5ed7 100%);
+    border-top: 3px solid #ffd700; /* Golden top border original touch ke liye */
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .logo {
-    position: absolute;
-    height: 80%;
-    left: 8%;
-    width: 25%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: static; /* Old absolute remove */
+    width: auto;
 }
 
 .logo-img {
-    width: 100%;
     height: 100%;
+    width: auto;
 }
 
-.download {
-    max-width: 640px;
-    margin: 0 auto;
-    /* width: 110px;
-    height: 40px; */
-}
-
-.download-btn {
-    width: 100%;
-    height: 100%;
-}
-
-.following-text {
-    font-size: 16px;
-    color: #fff;
-}
-
-.div-btn {
-    width: 70%;
-    height: 60px;
-}
-
-.dis {
-    display: none;
-}
-
-.room {
-    color: #666;
-    /* margin-bottom: 15px; */
-    padding: 0 10px;
-    height: 30px;
+.download-container {
     display: flex;
-    font-size: 16px;
-    font-weight: bold;
-    /* justify-content: center; */
     align-items: center;
 }
 
-.room-no {
-    border-radius: 2px;
-    height: 30px;
-    border: 1px solid #999;
-    margin: 0 5px;
-    width: 30px;
+.downloadButton {
+    background: linear-gradient(to bottom, #ffd700 0%, #ff8c00 100%);
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 0px #b8860b, 0 6px 10px rgba(0,0,0,0.4);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    cursor: pointer;
+    transition: all 0.1s;
     text-align: center;
-    line-height: 30px;
-    color: #6a6a6a;
 }
 
-.room-item {
-    display: flex;
+.downloadButton:hover {
+    filter: brightness(1.1);
 }
 
-/*//////////////////////////////////////////////////////////////////////////*/
-/* .download {
-  height: 169%;
-} */
-
-.box1 {
-    position: relative;
-    /* background-image: url("../images/mages2.jpg"); */
-    /* // padding-top: 100%; */
-    /*height: 100%;*/
-    max-height: 1400px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    justify-content: center;
-}
-
-.btn1 {
-    position: absolute;
-    top: 10.5rem;
-    width: 8rem;
-    height: 3rem;
-    left: 50%;
-    margin-left: -4rem;
-}
-
-.btn4 {
-    position: absolute;
-    top: 19.5rem;
-    width: 3rem;
-    height: 3rem;
-    left: 50%;
-    margin-left: -1.5rem;
-}
-
-.btn1-img {
-    width: 100%;
-    height: 100%;
-}
-
-.btn2 {
-    position: absolute;
-    top: 41.5rem;
-    width: 8rem;
-    height: 3rem;
-    left: 50%;
-    margin-left: -4rem;
-}
-
-.btn2-img {
-    width: 100%;
-    height: 100%;
-}
-
-.btn4-img {
-    width: 100%;
-    height: 100%;
-}
-
-.footer {
-    position: fixed;
-    bottom: 0px;
-    max-width: 640px;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.download1{
-    width:100%;
-    height: 100%;
-}
-
-.title {
-    color: #fff;
-    font-size: 16px;
-}
-
-.btn3 {
-    width: 110px;
-    height: 40px;
-}
-
-.btn3-img {
-    width: 100%;
-    height: 100%;
-}
-
-.logo1 {
-    width: 50px;
-    height: 50px;
-}
-
-.logo-img1 {
-    width: 100%;
-    height: 100%;
-}
-
-.backTop {
-    width: 100px;
-    height: 35px;
-    position: absolute;
-    bottom: 65px;
-    /* // background-color: #fff; */
-}
-
-.box-img {
-    display: block;
-    width: 100%;
-}
-
-.info {
-    margin-bottom: 65px;
-    height: 15rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.dis1 {
-    height: 0px;
-    display: none;
+.downloadButton:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0px #b8860b;
 }
