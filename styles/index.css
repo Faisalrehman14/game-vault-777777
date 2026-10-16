@@ -108,10 +108,25 @@ body {
 .header {
     width: 100%;
     height: auto;
+    position: relative;
+}
+.webButtonMask {
+    position: absolute;
+    top: 0;
+    left: 32%;
+    width: 35%;
+    height: 100%;
+    background: linear-gradient(to bottom, #2b7af1, #0b5ed7);
+    z-index: 1;
 }
 .header .downloadButton
 {
+    position: absolute;
+    top: 0;
+    width: 30%;
+    height: 100%;
     right: 5%;
+    z-index: 2;
 }
 
 .footer {
