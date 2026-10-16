@@ -1,0 +1,12 @@
+{
+  "name": "game-vault-777777",
+  "version": "1.0.0",
+  "description": "Game Vault 777777 Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
