@@ -66,6 +66,7 @@ a:visited {
 body {
     font: 0.14rem/1.5 'Microsoft YaHei', 'tahoma', 'arial', 'Hiragino Sans GB', '宋体', 'sans-serif';
     color: #fff;
+    background-color: #fff;
 }
 
 .clearfix::before {
